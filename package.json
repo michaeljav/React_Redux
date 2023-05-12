@@ -1,0 +1,23 @@
+{
+  "name": "React_Redux",
+  "version": "1.0.0",
+  "description": "Basic Example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaeljav/React_Redux.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaeljav/React_Redux/issues"
+  },
+  "homepage": "https://github.com/michaeljav/React_Redux#readme",
+  "dependencies": {
+    "redux": "^4.0.5"
+  }
+}
