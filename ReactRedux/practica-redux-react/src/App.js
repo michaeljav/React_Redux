@@ -13,7 +13,7 @@ function App() {
   console.log(store.getState());
 
   return (
-    // <Provider store={store}> CON ESTO SE CONECTA REACT A REDUS
+    // <Provider store={store}> CON ESTO SE CONECTA REACT A REDUS SOLAMENTE
     <Provider store={store}>
       <div className='App container'>
         <div className='row'>
