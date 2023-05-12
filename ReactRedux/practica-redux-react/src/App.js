@@ -13,6 +13,8 @@ import CantidadPokemonHook from './components/CantidadPokemon.hook';
 //PARA CONECTAR REDUX CON REACT
 import store from './redux/reducers/store';
 import { Provider } from 'react-redux';
+import BuscadorPokemon from './components/buscador/BuscadorPokemon';
+import ResultadoPokemon from './components/buscador/ResultadoPokemon';
 
 function App() {
   console.log(store.getState());
@@ -44,6 +46,12 @@ function App() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className='col-12 mt-4 border-top pt-3'>
+            <BuscadorPokemon />
+          </div>
+          <div className='col-12'>
+            <ResultadoPokemon />
           </div>
         </div>
       </div>
