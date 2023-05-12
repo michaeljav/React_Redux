@@ -25,6 +25,8 @@ export const fetchPokemonFailure = (error) => {
   };
 };
 
+//aqui haremos la peticiones y usariamos las acciones
+
 //envuelta en una gran accion que se ira intercambiando
 // --> esta es una funcion currificada: una funcion que devuelve otra funcion.
 //++++++cuando hagamos el dispatch esto returna una funcion
