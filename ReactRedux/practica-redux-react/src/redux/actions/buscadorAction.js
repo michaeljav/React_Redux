@@ -20,7 +20,7 @@ export const fetchPokemonSuccess = (pokemon) => {
 
 export const fetchPokemonFailure = (error) => {
   return {
-    type: FETCH_POKEMON_SUCCESS,
+    type: FETCH_POKEMON_FAILURE,
     payload: error,
   };
 };
@@ -36,7 +36,7 @@ const fetchPokemon = (valor) => {
     dispatch(fetchPokemonRequest());
     Axios.get(`https://pokeapi.co/api/v2/pokemon/${valor}`)
       .then((response) => {
-        dispatch(fetchPokemonSuccess(response.data));
+        dispatch(fetchPokemonSuccess([response.data]));
       })
       .catch((error) => {
         dispatch(fetchPokemonFailure('No se encontro el pokemon'));
