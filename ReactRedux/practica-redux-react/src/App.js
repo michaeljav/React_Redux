@@ -2,9 +2,14 @@ import './App.css';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
-import CantidadPokemon from './components/CantidadPokemon';
-import CompraPokemon from './components/CompraPokemon';
 
+//class component
+// import CantidadPokemon from './components/CantidadPokemon';
+// import CompraPokemon from './components/CompraPokemon';
+
+//HOOKS
+import CompraPokemonHook from './components/CompraPokemon.hook';
+import CantidadPokemonHook from './components/CantidadPokemon.hook';
 //PARA CONECTAR REDUX CON REACT
 import store from './redux/reducers/store';
 import { Provider } from 'react-redux';
@@ -30,8 +35,10 @@ function App() {
                 <div className='col-8'>
                   <div className='card-body'>
                     <div className='card-title h3 text-center'>
-                      <CantidadPokemon />
-                      <CompraPokemon />
+                      {/* <CantidadPokemon />
+                      <CompraPokemon /> */}
+                      <CantidadPokemonHook />
+                      <CompraPokemonHook />
                     </div>
                   </div>
                 </div>
