@@ -4,7 +4,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import CantidadPokemon from './components/CantidadPokemon';
 import CompraPokemon from './components/CompraPokemon';
+import store from './redux/reducers/store';
 function App() {
+  console.log(store.getState());
+
   return (
     <div className='App container'>
       <div className='row'>
